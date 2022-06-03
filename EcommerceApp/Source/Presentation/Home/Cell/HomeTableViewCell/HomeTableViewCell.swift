@@ -1,5 +1,5 @@
 //
-//  CategoryTableViewCell.swift
+//  HomeTableViewCell.swift
 //  EcommerceApp
 //
 //  Created by Vivek M on 03/06/22.
@@ -7,12 +7,12 @@
 
 import UIKit
 
-class CategoryTableViewCell: UITableViewCell {
-    @IBOutlet weak var cvCategories: UICollectionView!
+class HomeTableViewCell: UITableViewCell {
+    @IBOutlet weak var vwCollection: UICollectionView!
     
     private var homeData: HomeData? {
         didSet {
-            self.cvCategories.reloadData()
+            self.vwCollection.reloadData()
         }
     }
 
@@ -22,7 +22,7 @@ class CategoryTableViewCell: UITableViewCell {
 
 }
 
-extension CategoryTableViewCell: UICollectionViewDataSource {
+extension HomeTableViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         homeData?.values.count ?? 0
     }

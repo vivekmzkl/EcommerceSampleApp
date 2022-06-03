@@ -84,7 +84,7 @@
                                         <rect key="frame" x="0.0" y="57" width="414" height="668"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="category" rowHeight="98" id="7MP-P3-9BZ" customClass="CategoryTableViewCell" customModule="EcommerceApp" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="category" rowHeight="98" id="7MP-P3-9BZ" customClass="HomeTableViewCell" customModule="EcommerceApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="44.5" width="414" height="98"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7MP-P3-9BZ" id="LUi-Re-v89">
@@ -171,10 +171,10 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
-                                                    <outlet property="cvCategories" destination="vBS-a6-6zD" id="2As-Ay-bQ9"/>
+                                                    <outlet property="vwCollection" destination="vBS-a6-6zD" id="2As-Ay-bQ9"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="banners" rowHeight="195" id="nQM-Xr-GED" customClass="CategoryTableViewCell" customModule="EcommerceApp" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="banners" rowHeight="195" id="nQM-Xr-GED" customClass="HomeTableViewCell" customModule="EcommerceApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="142.5" width="414" height="195"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nQM-Xr-GED" id="8zX-aL-wqU">
@@ -251,10 +251,10 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
-                                                    <outlet property="cvCategories" destination="ihc-Zz-8df" id="IFx-3D-QDS"/>
+                                                    <outlet property="vwCollection" destination="ihc-Zz-8df" id="IFx-3D-QDS"/>
                                                 </connections>
                                             </tableViewCell>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="products" rowHeight="305" id="MgB-k5-0zs" customClass="CategoryTableViewCell" customModule="EcommerceApp" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="products" rowHeight="305" id="MgB-k5-0zs" customClass="HomeTableViewCell" customModule="EcommerceApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="337.5" width="414" height="305"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MgB-k5-0zs" id="H1G-Jf-lej">
@@ -444,7 +444,7 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
-                                                    <outlet property="cvCategories" destination="rBN-Jt-tXf" id="OjO-wI-Eh0"/>
+                                                    <outlet property="vwCollection" destination="rBN-Jt-tXf" id="OjO-wI-Eh0"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>

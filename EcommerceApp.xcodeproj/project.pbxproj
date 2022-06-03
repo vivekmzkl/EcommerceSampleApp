@@ -27,7 +27,7 @@
 		180DB5F1284A4E2700D627F5 /* HomeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DB5F0284A4E2700D627F5 /* HomeData.swift */; };
 		180DB5F5284A4E8200D627F5 /* HomeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DB5F4284A4E8200D627F5 /* HomeResponse.swift */; };
 		180DB5F8284A53C500D627F5 /* ActivityIndicatorLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DB5F7284A53C500D627F5 /* ActivityIndicatorLoader.swift */; };
-		180DB5FA284A565100D627F5 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DB5F9284A565100D627F5 /* CategoryTableViewCell.swift */; };
+		180DB5FA284A565100D627F5 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DB5F9284A565100D627F5 /* HomeTableViewCell.swift */; };
 		180DB5FE284A57C900D627F5 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DB5FD284A57C900D627F5 /* CategoryCollectionViewCell.swift */; };
 		180DB601284A586300D627F5 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 180DB600284A586300D627F5 /* SDWebImage */; };
 		180DB607284A61B200D627F5 /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180DB606284A61B200D627F5 /* BannerCollectionViewCell.swift */; };
@@ -78,7 +78,7 @@
 		180DB5F0284A4E2700D627F5 /* HomeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeData.swift; sourceTree = "<group>"; };
 		180DB5F4284A4E8200D627F5 /* HomeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeResponse.swift; sourceTree = "<group>"; };
 		180DB5F7284A53C500D627F5 /* ActivityIndicatorLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorLoader.swift; sourceTree = "<group>"; };
-		180DB5F9284A565100D627F5 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		180DB5F9284A565100D627F5 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		180DB5FD284A57C900D627F5 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		180DB606284A61B200D627F5 /* BannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCollectionViewCell.swift; sourceTree = "<group>"; };
 		180DB609284A633100D627F5 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -252,7 +252,7 @@
 				180DB608284A631C00D627F5 /* ProductCollectionViewCell */,
 				180DB605284A619C00D627F5 /* BannerCollectionViewCell */,
 				180DB5FC284A57A300D627F5 /* CategoryCollectionViewCell */,
-				180DB5FB284A579100D627F5 /* CategoryTableViewCell */,
+				180DB5FB284A579100D627F5 /* HomeTableViewCell */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -291,12 +291,12 @@
 			path = ViewExtender;
 			sourceTree = "<group>";
 		};
-		180DB5FB284A579100D627F5 /* CategoryTableViewCell */ = {
+		180DB5FB284A579100D627F5 /* HomeTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				180DB5F9284A565100D627F5 /* CategoryTableViewCell.swift */,
+				180DB5F9284A565100D627F5 /* HomeTableViewCell.swift */,
 			);
-			path = CategoryTableViewCell;
+			path = HomeTableViewCell;
 			sourceTree = "<group>";
 		};
 		180DB5FC284A57A300D627F5 /* CategoryCollectionViewCell */ = {
@@ -475,7 +475,7 @@
 				180DB607284A61B200D627F5 /* BannerCollectionViewCell.swift in Sources */,
 				180DB5E7284A4B1500D627F5 /* HomeViewModel.swift in Sources */,
 				180DB5EC284A4C0200D627F5 /* ViewModel.swift in Sources */,
-				180DB5FA284A565100D627F5 /* CategoryTableViewCell.swift in Sources */,
+				180DB5FA284A565100D627F5 /* HomeTableViewCell.swift in Sources */,
 				180DB5F1284A4E2700D627F5 /* HomeData.swift in Sources */,
 				180DB5ED284A4C0200D627F5 /* RefreshDelegate.swift in Sources */,
 				180DB5F8284A53C500D627F5 /* ActivityIndicatorLoader.swift in Sources */,

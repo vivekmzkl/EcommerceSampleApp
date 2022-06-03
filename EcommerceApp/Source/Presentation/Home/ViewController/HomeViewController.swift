@@ -64,7 +64,7 @@ extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let homeData = self.viewModel.homeData![indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: homeData.type.rawValue, for: indexPath) as! CategoryTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: homeData.type.rawValue, for: indexPath) as! HomeTableViewCell
         cell.set(homeData: homeData)
         return cell
     }
