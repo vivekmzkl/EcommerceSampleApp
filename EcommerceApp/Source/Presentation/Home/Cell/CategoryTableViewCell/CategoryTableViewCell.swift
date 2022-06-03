@@ -8,32 +8,42 @@
 import UIKit
 
 class CategoryTableViewCell: UITableViewCell {
-    
-    static let id = "CategoryTableViewCell"
     @IBOutlet weak var cvCategories: UICollectionView!
     
-    var categories = [HomeData.Value]() {
+    private var homeData: HomeData? {
         didSet {
-            DispatchQueue.main.async {
-                self.cvCategories.reloadData()
-            }
+            self.cvCategories.reloadData()
         }
     }
 
-    func set(categories: [HomeData.Value]) {
-        self.categories = categories
+    func set(homeData: HomeData) {
+        self.homeData = homeData
     }
 
 }
 
 extension CategoryTableViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        categories.count
+        homeData?.values.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: <#T##String#>, for: <#T##IndexPath#>)
+        switch homeData?.type {
+        case .category:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.id, for: indexPath) as! CategoryCollectionViewCell
+            cell.set(category: homeData!.values[indexPath.row])
+            return cell
+        case .banners:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: BannerCollectionViewCell.id, for: indexPath) as! BannerCollectionViewCell
+            cell.set(banner: homeData!.values[indexPath.row])
+            return cell
+        case .products:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProductCollectionViewCell.id, for: indexPath) as! ProductCollectionViewCell
+            cell.set(product: homeData!.values[indexPath.row])
+            return cell
+        default:
+            fatalError("Unknown cell")
+        }
+        
     }
-    
-    
 }
